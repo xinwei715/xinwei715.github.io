@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>DELIVERY</title>
+<title>HOME</title>
+<style type="text/css">
+
+body{
+	background-image:url('background.jpg')
+}
+
+#topbar{
+	background-color:rgba(255, 255, 255, .4);
+	padding:20px 200px 20px 20px;
+	text-decoration:none;
+}
+
+#table td{
+	font-size:10px;
+	font-family:Tahoma;
+	text-decoration:none;
+	padding:1px 10px 1px 10px;
+}
+	
+#table td:hover{
+	font-weight:bold;
+}
+
+#header{
+	background-color:rgba(245, 250, 2, .8);
+	padding-left:140px;
+	padding-right:140px;
+	padding-bottom:1px;
+	display:inherit;
+}
+
+#img1{
+	height:140px;
+	width:400px;
+}
+
+#img2{
+	height:140px;
+	width:140px;
+	padding-left:50px;
+}
+
+#nav{
+	margin-top: 5px;
+	padding:3px 90px 3px 90px;
+	background-color:rgba(255, 255, 255, .6);
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#menu ul li{
+	display:inline-block;
+	text-decoration:none;
+}
+
+#menu ul li a{
+	display:block;
+	padding-left:40px;
+	padding-right:40px;
+	text-decoration:none;
+}
+
+#menu ul li a:hover{
+	background-color:#669900;
+}
+
+#footer{
+	background-color:rgba(255, 255, 255, .4);
+	display:inline-block;
+	float:right;
+	padding:1px 180px 1px 820px;
+	font-size:12px;
+}
+
+.form label{
+	display:block;
+}
+
+.form label>span{
+	float: left;
+    width: 100px;
+    text-align: left;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+#delivery{
+	background-color:rgba(255, 255, 255, .6);
+	margin:50px 100px 20px 245px;
+	padding:20px;
+}
+</style>
+</head>
+
+<body style="height: 630px">
+<!--Header-->
+<div id="topbar">
+	<table id="table" style="float:right">
+	<tr>
+		<td style="font-size:12px">Lala (Admin)</td>
+		<td><a href="Weekly Report(Book).html">WEEKLY REPORT</a></td>
+		<td><a href="index.html">LOG OUT</a></td>
+	</tr>
+	</table>
+</div>
+
+
+<div id="header">
+ <img id="img1" src="logo1.png"/>
+ <img id="img2" src="stamps1.png"/>
+<!--End header>
+ 
+ 
+ 
+ 
+<!--search engine-->
+ <div class="searchengine" style="float:right;padding-top:50px;width:400px">
+	<form style="display:table-cell">
+	<input name="searchText1" type="text" style="border-color:#00CC99;border-style:inherit;width:300px;height:30px;padding-left:10px
+		;font-family:'Comic Sans MS'" placeholder="Search key word" />
+		<a href="Search(Admin).html">
+	<input name="Button1" type="button" value="Search" style="padding:1px;height:30px;width:54px;font-family:'Angsana New';
+		font-size:15px;text-align:center;background-color:#80B34D;border-color:none"/></a>
+	</form>
+</div>
+</div>
+<!--end search engine-->
+ 
+ 
+
+
+<!--Nagivation Bar-->
+<div id="nav">
+<div id="menu">
+<ul>
+	<li><a href="Home(Admin).html">HOME</a></li>|
+	<li><a href="Book(Admin).html">BOOK</a></li>|
+	<li><a href="Magazine(Admin).html">MAGAZINE</a></li>|
+	<li><a href="Stationery(Admin).html">STATIONERY</a></li>|
+	<li><a href="Edit(Add book).html">EDIT</a></li>|
+	<li><a href="Feedbacks.html">FEEDBACKS</a></li>|
+	<li><a href="Delivery.html">DELIVERY</a></li>
+
+</ul>
+</div></div>
+<!--End nagivation-->
+
+
+
+<!--Delivery-->
+<table id="delivery" style="width: 850px">
+	<tr><td><form class="form"><label><span style="width: 130px">Customer ID: </span>
+									  <span style="width: 175px"><select name="OR300023">
+																 <option>OR300023</option>
+																 <option>OR300654</option>
+																 <option>OR300006</option>
+																 <option>OR303059</option>
+																 <option>OR300749</option>
+																 </select>
+									  </span>
+								</label>
+			</form>
+		</td>
+				
+		<td rowspan="3"><form class="form" style="height: 113px">
+							<label style="height: 240px">
+							<span style="height: 230px; width: 120px;">Delivery Status: </span>
+																  <span style="width: 150px; height: 230px;">Order Summitted<br/><br/>
+																  							 Payment Complete<br/><br/>
+																  							 Order Shipped<br/><br/>
+																  							 Pending Delivery<br/><br/>
+																  							 Delivery and Confirm</span>
+																  <span style="width: 175px; height: 230px;">2016-4-10 / 3.46P.M.<br/><br/>
+																  							 2016-4-10 / 3.55P.M.<br/><br/>
+																  							 2016-4-15 / 10.00A.M.<br/><br/>
+																  							 <input name="Text1" type="text" required="required"/><br/><br/>
+																  							 <input name="Text1" type="text"/><br/><br/>
+																  							 <input name="Submit1" type="submit" value="Update" style="float:right"/></span>
+							</label>
+						</form>
+	</td></tr>
+												  
+	<tr><td><form class="form"><label><span style="width: 130px">Customer Details: </span>
+									  <span style="width: 175px">Chong Xin Wei<br/><br/>
+														  		 23, Jalan Impian Indah 4,<br/>
+																 Taman Impian Indah,<br/>
+																 43300, Seri Kembangan,
+																 Selangor.
+									  </span>
+								</label>
+			</form>
+		</td>
+	</tr>
+									
+	<tr><td><form class="form"><label><span style="width: 130px">Customer Purchase:</span>
+									  <span style="width: 175px">- Lady Midnight (1)<br/></span>
+								</label>
+			</form>
+		</td>
+	</tr>
+	
+</table>			
+<!--End delivery-->
+
+
+
+
+<!--Footer-->
+<div id="footer">
+<p>Copyright©2016 NorthernFameBookstore.com. All Rights Reserved.</p>
+</div>
+<!--End footer-->
+</body>
+
+</html>

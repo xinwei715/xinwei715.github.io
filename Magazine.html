@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>MAGAZINE</title>
+<style type="text/css">
+
+body{
+	background-image:url('background.jpg')
+}
+
+#topbar{
+	background-color:rgba(255, 255, 255, .4);
+	padding:20px 200px 20px 20px;
+	text-decoration:none;
+}
+
+#table td{
+	font-size:10px;
+	font-family:Tahoma;
+	text-decoration:none;
+	padding:1px 10px 1px 10px;
+}
+	
+#table td:hover{
+	font-weight:bold;
+}
+
+#header{
+	background-color:rgba(245, 250, 2, .8);
+	padding-left:140px;
+	padding-right:140px;
+	padding-bottom:1px;
+	display:inherit;
+}
+
+#img1{
+	height:140px;
+	width:400px;
+}
+
+#img2{
+	height:140px;
+	width:140px;
+	padding-left:50px;
+}
+
+#nav{
+	margin-top: 5px;
+	padding:3px 140px 3px 140px;
+	background-color:rgba(255, 255, 255, .6);
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#menu ul li{
+	display:inline-block;
+	text-decoration:none;
+}
+
+#menu ul li a{
+	display:block;
+	padding-left:40px;
+	padding-right:40px;
+	text-decoration:none;
+}
+
+#menu ul li a:hover{
+	background-color:#669900;
+	text-decoration:none;
+}
+
+#booktitle{
+	background-color:#E6FD8A;
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+	font-family:"Franklin Gothic Book";
+	font-weight:bold;
+	font-size:20px;
+	margin: 10px 60px 10px 60px;
+	padding: 10px 55px 10px 55px;
+	border-radius:30px;
+	text-align:center;
+	width:300px;
+}
+
+#book{
+	background-color:rgba(255, 255, 255, .6);
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+	margin: 10px 60px 10px 60px;
+	padding: 10px;
+	text-align:center;
+	border-bottom:none;
+}
+
+#bookimg{
+	height:170px;
+	width:120px;
+}
+
+#bookdescrip{
+	background-color:rgba(255, 255, 255, .6);
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+	font-family:"Comic Sans MS";
+	font-size:12px;
+	margin: 10px 60px 10px 60px;
+	padding: 10px;
+	text-align:center;
+	border-bottom:none;
+}
+
+#bookdetails{
+	background-color:#EAFF95;
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+	border-radius:7px;
+	font-family:"Kristen ITC";
+	font-size:15px;
+	text-align:center;
+	padding-left:8px;
+	padding-right:8px;
+
+}
+
+#addtocart_button {
+	font-family:"Kristen ITC";
+	font-size:15px;
+	border-style:hidden;
+	background:#EAFF95;
+	cursor:pointer;
+}
+
+/*Item Details*/
+#popup { 
+	color:black; 
+}
+
+#popup a span {
+	display:none;
+}
+
+#popup a:hover { 
+	height:100%;
+	width:100%;
+	display:block;
+	cursor:pointer; 
+}
+
+#popup a:hover span {
+	font-size:12px;
+	line-height:15px;
+	display:block;
+	position:absolute;
+	width:200px;
+	padding:10px;
+	color:black;
+	background:white;
+	text-align:left;
+}
+/*End of Item Details*/
+
+
+#footer{
+	background-color:rgba(255, 255, 255, .4);
+	display:inline-block;
+	float:right;
+	padding:1px 180px 1px 820px;
+	font-size:12px;
+}
+
+</style>
+</head>
+
+<body>
+<!--Header-->
+<div id="topbar">
+	<table id="table" style="float:right">
+	<tr>
+		<td><a href="Sign in.html">SIGN IN</a></td>
+		<td><a href="Registration.html">REGISTER</a></td>
+	</tr>
+	</table>
+</div>
+
+<div id="header">
+ <img id="img1" src="logo1.png"/>
+ <img id="img2" src="stamps1.png"/>
+
+
+<!--End header>
+ 
+<!--search engine-->
+ <div class="searchengine" style="float:right;padding-top:50px;width:400px">
+	<form style="display:table-cell">
+	<input name="searchText1" type="text" style="border-color:#00CC99;border-style:inherit;width:300px;height:30px;padding-left:10px
+		;font-family:'Comic Sans MS'" placeholder="Search key word" />
+		<a href="Search.html">
+	<input name="Button1" type="button" value="Search" style="padding:1px;height:30px;width:54px;font-family:'Angsana New';
+		font-size:15px;text-align:center;background-color:#80B34D;border-color:none"/></a>
+	</form>
+</div>
+</div>
+<!--end search engine-->
+
+
+
+<!--Nagivation Bar-->
+<div id="nav">
+<div id="menu">
+<ul>
+	<li><a href="index.html">HOME</a></li>|
+	<li><a href="Book.html">BOOK</a></li>|	
+	<li><a href="Magazine.html">MAGAZINE</a></li>|
+	<li><a href="Stationery.html">STATIONERY</a></li>|
+	<li><a href="About us.html">ABOUT US</a></li>|
+	<li><a href="Contact Us.html">CONTACT US</a></li>
+</ul>
+</div></div>
+<<!--End nagivation>
+
+
+
+<!--Book table-->
+<section>
+<table style="margin:10px;padding-left:100px;padding-right:100px">
+<tr><td id="booktitle" colspan="2">Better Homes and Gardens Magazine</td>
+	<td id="booktitle" colspan="2">Elle Magazine</td>
+	<td id="booktitle" colspan="2">Cosmopolitan Magazine</td>
+	<td id="booktitle" colspan="2">Popular Mechanics Magazine</td>
+</tr>
+
+<tr><td id="book" colspan="2"><img id="bookimg" src="better home.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="elle.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="cosmopolitan.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="popular mechanics.jpg"/></td>
+</tr>	
+
+<tr><td id="bookdescrip" colspan="2">Better Homes and Gardens is a monthly
+								<br/> magazine for men and women who are 
+								<br/>interested in making their homes and
+								<br/> families the focal points in their 
+								<br/>lives. Features range from home 
+								<br/>improvement including do-it-yourself
+								<br/> projects and decorating to 
+								<br/>family-oriented topics, such as 
+								<br/>health care and parenting. Provides
+								<br/> ideas and how-to information on 
+								<br/>interior decorating, landscape design,
+								<br/> home entertainment, parenting, food,
+								<br/> money, automotives.</td>
+
+	<td id="bookdescrip" colspan="2">Elle is an international fashion magazine 
+								<br/>covering runway trends and high style. 
+								<br/>Devoted to the sophisticated and 
+								<br/>well-traveled woman, this monthly magazine's
+								<br/> well-written articles and columns cover 
+								<br/>everything from the style and beauty trends
+								<br/> to personalities and lifestyles. 
+								<br/>International style magazine for the 
+								<br/>sophisticated, affluent, well-traveled 
+								<br/>woman. Reports on global ideas and trends
+								<br/> in fashion, personalities and life-styles.</td>
+							
+	<td id="bookdescrip" colspan="2">COSMOPOLITAN was created to help contemporary
+								<br/> women achieve their goals and live fuller, 
+								<br/>more glamorous lives. Monthly features 
+								<br/>include beauty tips, solutions on how to deal
+								<br/> with boyfriends or spouses, career problems,
+								<br/> and ideas on how to alleviate stress. Covers
+								<br/> the contemporary woman. Cosmopolitan Features
+								<br/> articles on beauty, health, fashion, career 
+								<br/>and social issues affecting today's woman.</td>
+							
+	<td id="bookdescrip" colspan="2">POPULAR MECHANICS readers are people who take 
+								<br/>interest in their physical surroundings and a
+								<br/> "Do It Yourself" frame of mind with special 
+								<br/>interest in computers, cars, electronics, 
+								<br/>home, science and sports.</td>
+
+</tr>						
+							
+<tr><td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM17.80/issue<br/>
+			  Publisher: Meredith Publishing<br/>
+			  ISSN: 0006-0151<br/>
+			  Country: US<br/>
+			  Subject: HOME ECONOMICS|INTERIOR DESIGN AND DECORATION|ARCHITECTURE<br/>
+			  Language: Text in English<br/>
+			  Issues per year: 12		
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="myFunction()" id="addtocart_button">Add to Cart</button>
+	</td>
+	
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM32.20/issue<br/>
+			  Publisher: Hachette Filipacchi Media U.S., Inc.<br/>
+			  ISSN: 0888-0808<br/>
+			  Country: US<br/>
+			  Subject: CLOTHING TRADE-FASHIONS|WOMEN'S INTERESTS<br/>
+			  Language: Text in English<br/>
+			  Issues per year: 12
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="myFunction()" id="addtocart_button">Add to Cart</button>
+	</td>
+
+	
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM18.50/issue<br/>
+			  Publisher: Hearst Communications, Inc.<br/>
+			  ISSN: 0010-9541<br/>
+			  Country: US<br/>
+			  Subject: WOMEN'S INTERESTS<br/>
+			  Language: Text in English<br/>
+			  Issues per year: 12
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="myFunction()" id="addtocart_button">Add to Cart</button>
+	</td>
+
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM16.45/issue<br/>
+			  Publisher: Hearst Communications, Inc.<br/>
+			  ISSN: 0032-4558<br/>
+			  Country: US<br/>
+			  Subject: TECHNOLOGY: COMPREHENSIVE WORKS<br/>
+			  Language: Text in English<br/>
+			  Issues per year: 10
+
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="myFunction()" id="addtocart_button">Add to Cart</button>
+	</td>
+	</tr>
+	
+	
+<script>
+	function myFunction() {
+	    alert("Please log in to purchase.");
+	}
+</script>
+
+</table>
+</section>
+
+<!--Footer-->
+<div id="footer">
+<p>Copyright©2016 NorthernFameBookstore.com. All Rights Reserved.</p>
+</div>
+<!--End footer-->
+
+</body>
+
+</html>

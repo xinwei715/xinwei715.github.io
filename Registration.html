@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>HOME</title>
+<style type="text/css">
+
+body{
+	background-image:url('background.jpg')
+}
+
+#topbar{
+	background-color:rgba(255, 255, 255, .4);
+	padding:20px 200px 20px 20px;
+	text-decoration:none;
+}
+
+#table td{
+	font-size:10px;
+	font-family:Tahoma;
+	text-decoration:none;
+	padding:1px 10px 1px 10px;
+}
+	
+#table td:hover{
+	font-weight:bold;
+}
+
+#header{
+	background-color:rgba(245, 250, 2, .8);
+	padding-left:140px;
+	padding-right:140px;
+	padding-bottom:1px;
+	display:inherit;
+}
+
+#img1{
+	height:140px;
+	width:400px;
+}
+
+#img2{
+	height:140px;
+	width:140px;
+	padding-left:50px;
+}
+
+#nav{
+	margin-top: 5px;
+	padding:3px 140px 3px 140px;
+	background-color:rgba(255, 255, 255, .6);
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#menu ul li{
+	display:inline-block;
+	text-decoration:none;
+}
+
+#menu ul li a{
+	display:block;
+	padding-left:40px;
+	padding-right:40px;
+	text-decoration:none;
+}
+
+#menu ul li a:hover{
+	background-color:#669900;
+}
+
+#registration{
+	background-color:rgba(255, 255, 255, .6);
+}
+
+#footer{
+	background-color:rgba(255, 255, 255, .4);
+	display:inline-block;
+	float:right;
+	padding:1px 180px 1px 820px;
+	font-size:12px;
+}
+
+</style>
+</head>
+
+<body>
+<!--Header-->
+<div id="topbar">
+	<table id="table" style="float:right">
+	<tr>
+		<td><a href="Sign in.html">SIGN IN</a></td>
+		<td><a href="Registration.html">REGISTER</a></td>
+	</tr>
+	</table>
+</div>
+
+
+<div id="header">
+ <img id="img1" src="logo1.png">
+ <img id="img2" src="stamps1.png">
+<!--End header>
+ 
+ 
+ 
+ 
+<!--search engine-->
+ <div class="searchengine" style="float:right;padding-top:50px;width:400px">
+	<form style="display:table-cell">
+	<input name="searchText1" type="text" style="border-color:#00CC99;border-style:inherit;width:300px;height:30px;padding-left:10px
+		;font-family:'Comic Sans MS'" placeholder="Search key word" />
+		<a href="Search.html">
+	<input name="Button1" type="button" value="Search" style="padding:1px;height:30px;width:54px;font-family:'Angsana New';
+		font-size:15px;text-align:center;background-color:#80B34D;border-color:none"></a>
+	</form>
+</div>
+</div>
+<!--end search engine-->
+ 
+ 
+
+
+<!--Nagivation Bar-->
+<div id="nav">
+<div id="menu">
+<ul>
+	<li><a href="index.html">HOME</a></li>|
+	<li><a href="Book.html">BOOK</a></li>|	
+	<li><a href="Magazine.html">MAGAZINE</a></li>|
+	<li><a href="Stationery.html">STATIONERY</a></li>|
+	<li><a href="About us.html">ABOUT US</a></li>|
+	<li><a href="Contact Us.html">CONTACT US</a></li>
+</ul>
+</div></div>
+<!--End nagivation-->
+
+
+<section style="width:900px;height:600px;margin:auto"><div id="registration">
+<h1 style="color:#000099; font-weight:bold;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Brush Script MT';padding:10px">REGISTRATION</h1>
+<p style="color:maroon;font-weight:bold;font-size:15px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Brush Script MT';padding:10px">Please fill in the following details.<br>The * symbol means that this is a required detail.</p>
+<form name="registration" action="index.html" style="color:#993300;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Brush Script MT';padding:10px 10px 40px 10px" onsubmit="return validatepassword()">
+	<table style="width: 100%" cellpadding="8">
+		<tr>
+			<td> Username*:	<br/></td>
+			<td><input name="username" type="text" style="width: 233px" required="required" /></td>
+		</tr>
+		<tr>
+			<td> Password*:  <br/></td>
+			<td><input name="password" id="password" type="password" style="width:233px" required="required"/></td>
+		</tr>
+		<tr>
+			<td> Verify Password*:  <br/></td>
+			<td><input name="verify password"  id="password2" type="password" style="width:233px" required="required" /></td>
+		</tr>
+		<tr>
+			<td> Email*:   <br/></td>
+			<td><input name="email" type="email" style="width:300px" required="required" /></td>
+		</tr>
+		<tr>
+			<td> Full name: <br/></td>
+			<td><input name="fullname" type="text" style="width:233px"/></td>
+		</tr>
+		<tr>
+			<td> IC number:	<br/></td>
+			<td><input name="ic number" type="text" style="width:233px"/></td>
+		</tr>
+		<tr>
+			<td> Address:<br/></td>
+			<td><input name="address" type="text" style="width:700px" /></td>
+		</tr>
+		<tr>
+			<td> Phone number:	<br/></td>
+			<td><input name="Text1" type="tel" style="width:233px"  maxlength="13" placeholder="eg: +6 016 211 5555"/></td>
+		</tr>
+	</table>
+	<br/>
+	<input name="Reset1" type="reset" value="Reset" style="width: 90px; background-color:#FFFFCC;color:#996600;font-weight:bold; height: 32px;float:left"/>
+	<input name="Submit1" type="submit" value="Submit"  style="background-color:#FFFFCC;color:#996600;font-weight:bold; height: 32px; float:right; width: 90px;font-size:15px;border-color:maroon" />
+	
+</form>
+</div>
+</section>
+
+
+<!--Footer-->
+<div id="footer">
+<p>Copyright©2016 NorthernFameBookstore.com. All Rights Reserved.</p>
+</div>
+<!--End footer-->
+
+</body>
+	
+</html>

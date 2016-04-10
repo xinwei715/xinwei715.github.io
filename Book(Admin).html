@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>BOOK</title>
+<style type="text/css">
+
+body{
+	background-image:url('background.jpg')
+}
+
+#topbar{
+	background-color:rgba(255, 255, 255, .4);
+	padding:20px 180px 20px 20px;
+	text-decoration:none;
+}
+
+#table td{
+	font-size:10px;
+	font-family:Tahoma;
+	text-decoration:none;
+	padding:1px 10px 1px 10px;
+}
+	
+#table td:hover{
+	font-weight:bold;
+}
+
+#header{
+	background-color:rgba(245, 250, 2, .8);
+	padding-left:140px;
+	padding-right:140px;
+	padding-bottom:1px;
+	display:inherit;
+}
+
+#img1{
+	height:140px;
+	width:400px;
+}
+
+#img2{
+	height:140px;
+	width:140px;
+	padding-left:50px;
+}
+
+#nav{
+	margin-top: 5px;
+	padding:3px 90px 3px 90px;
+	background-color:rgba(255, 255, 255, .6);
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#menu ul li{
+	display:inline-block;
+	text-decoration:none;
+}
+
+#menu ul li a{
+	display:block;
+	padding-left:40px;
+	padding-right:40px;
+	text-decoration:none;
+}
+
+#menu ul li a:hover{
+	background-color:#669900;
+	text-decoration:none;
+}
+
+#booktitle{
+	background-color:#E6FD8A;
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+	font-family:"Franklin Gothic Book";
+	font-weight:bold;
+	font-size:20px;
+	text-align:center;
+	margin: 10px 60px 10px 60px;
+	padding: 10px 55px 10px 55px;
+	border-radius:30px;
+}
+
+#book{
+	background-color:rgba(255, 255, 255, .6);
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+	margin: 10px 60px 10px 60px;
+	padding: 10px;
+	text-align:center;
+	border-bottom:none;
+}
+
+#bookimg{
+	height:170px;
+	width:120px;
+}
+
+#bookdescrip{
+	background-color:rgba(255, 255, 255, .6);
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+	font-family:"Comic Sans MS";
+	font-size:12px;
+	margin: 10px 60px 10px 60px;
+	padding: 10px;
+	text-align:center;
+	border-bottom:none;
+}
+
+#bookdetails{
+	background-color:#EAFF95;
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+	border-radius:7px;
+	font-family:"Kristen ITC";
+	font-size:15px;
+	text-align:center;
+	padding-left:8px;
+	padding-right:8px;
+}
+
+#addtocart_button {
+	font-family:"Kristen ITC";
+	font-size:15px;
+	border-style:hidden;
+	background:#EAFF95;
+	cursor:pointer;
+}
+
+/*Item Details*/
+#popup { 
+	color:black; 
+}
+
+#popup a span {
+	display:none;
+}
+
+#popup a:hover { 
+	height:100%;
+	width:100%;
+	display:block;
+	cursor:pointer; 
+}
+
+#popup a:hover span {
+	font-size:12px;
+	line-height:15px;
+	display:block;
+	position:absolute;
+	width:200px;
+	padding:10px;
+	color:black;
+	background:white;
+	text-align:left;
+}
+/*End of Item Details*/
+
+
+#footer{
+	background-color:rgba(255, 255, 255, .4);
+	display:inline-block;
+	float:right;
+	padding:1px 180px 1px 820px;
+	font-size:12px;
+}
+</style>
+</head>
+
+<body>
+<!--Header-->
+<div id="topbar">
+	<table id="table" style="float:right">
+	<tr>
+		<td style="font-size:12px">Lala (Admin)</td>
+		<td><a href="Weekly Report(Book).html">WEEKLY REPORT</a></td>
+		<td><a href="index.html">LOG OUT</a></td>
+	</tr>
+	</table>
+</div>
+
+<div id="header">
+ <img id="img1" src="logo1.png"/>
+ <img id="img2" src="stamps1.png"/>
+
+
+<!--End header>
+ 
+<!--search engine-->
+ <div class="searchengine" style="float:right;padding-top:50px;width:400px">
+	<form style="display:table-cell">
+	<input name="searchText1" type="text" style="border-color:#00CC99;border-style:inherit;width:300px;height:30px;padding-left:10px
+		;font-family:'Comic Sans MS'" placeholder="Search key word" />
+		<a href="Search(Admin).html">
+	<input name="Button1" type="button" value="Search" style="padding:1px;height:30px;width:54px;font-family:'Angsana New';
+		font-size:15px;text-align:center;background-color:#80B34D;border-color:none"/></a>
+	</form>
+</div>
+</div>
+<!--end search engine-->
+
+
+
+<!--Nagivation Bar-->
+<div id="nav">
+<div id="menu">
+<ul>
+	<li><a href="Home(Admin).html">HOME</a></li>|
+	<li><a href="Book(Admin).html">BOOK</a></li>|
+	<li><a href="Magazine(Admin).html">MAGAZINE</a></li>|
+	<li><a href="Stationery(Admin).html">STATIONERY</a></li>|
+	<li><a href="Edit(Add book).html">EDIT</a></li>|
+	<li><a href="Feedbacks.html">FEEDBACKS</a></li>|
+	<li><a href="Delivery.html">DELIVERY</a></li>
+
+</ul>
+</div></div>
+<section>
+<table style="margin:10px;padding-left:200px">
+<tr><td id="booktitle" colspan="2">Lady Midnight</td>
+	<td id="booktitle" colspan="2">Glass Sword</td>
+	<td id="booktitle" colspan="2">Passenger</td>
+	<td id="booktitle" colspan="2">The Light Star</td>
+</tr>
+
+<tr><td id="book" colspan="2"><img id="bookimg" src="lady midnight.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="glass sword.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="Passenger.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="the last star.jpg"/></td>
+</tr>	
+
+<tr><td id="bookdescrip" colspan="2" style="height: 226px">The Shadowhunters of Los Angeles
+							<br/> star in the first novel in Cassandra
+							<br/> Clare’s newest series, The Dark 
+							<br/>Artifices, a sequel to the 
+							<br/>internationally bestselling Mortal
+							<br/> Instruments series. Lady Midnight
+							<br/> is a Shadowhunters novel.</td>
+	
+	
+	<td id="bookdescrip" colspan="2" style="height: 226px">If there’s one thing Mare Barrow
+								<br/> knows, it’s that she’s 
+								<br/>different.<br/>
+								<br/>Mare Barrow’s blood is red—the
+								<br/> color of common folk—but her
+								<br/> Silver ability, the power to
+								<br/> control lightning, has turned
+								<br/> her into a weapon that the 
+								<br/>royal court tries to control.</td>
+							
+	<td id="bookdescrip" colspan="2" style="height: 226px">In one devastating night, violin
+								<br/> prodigy Etta Spencer loses 
+								<br/>everything she knows and loves.
+								<br/> Thrust into an unfamiliar world
+								<br/> by a stranger with a dangerous
+								<br/> agenda, Etta is certain of only
+								<br/> one thing: she has traveled not
+								<br/> just miles but years from home.
+								<br/> And she’s inherited a legacy 
+								<br/>she knows nothing about from a 
+								<br/>family whose existence she’s 
+								<br/>never heard of. Until now.</td>
+							
+	<td id="bookdescrip" colspan="2" style="height: 226px">We’re here, then we’re gone, and that
+								<br/> was true before they came. That’s 
+								<br/> always been true. The Others didn’t 
+								<br/> invent death; they just perfected it. 
+								<br/>Gave death a face to put back in our 
+								<br/>face, because they knew that was the 
+								<br/>only way to crush us. It won’t end on
+								<br/> any continent or ocean, no mountain 
+								<br/>or plain, jungle or desert.It will end
+								<br/> where it began, where it had been 
+								<br/>from the beginning, on the battlefield
+								<br/> of the last beating human heart.</td>
+
+</tr>						
+							
+<tr><td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM66.80<br/>
+			  Hardcover, 720 pages<br/>
+			  Published March 8th 2016 by Margaret K. McElderry Books
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+	<a href="Book(Admin-Edited).html">
+		<button onclick="" id="addtocart_button">Edit</button></a>
+	</td>
+	
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM53.40<br/>
+			  Hardcover, 444 pages<br/>
+			  Published February 9th 2016 by HarperTeen
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="" id="addtocart_button">Edit</button>
+	</td>
+
+	
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM44.70<br/>
+			  Hardcover, 486 pages<br/>
+			  Published January 5th 2016 by Disney-Hyperion
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="" id="addtocart_button">Edit</button>
+	</td>
+
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM103.70<br/>
+			  Hardcover, 352 pages<br/>
+			  Expected publication: May 24th 2016 by G.P. Putnam's Sons Books for Young Readers
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="" id="addtocart_button">Edit</button>
+	</td>
+	</tr>
+</table>
+</section>
+
+
+
+
+<section>
+<table style="margin:10px;padding-left:200px">
+	
+<tr><td id="booktitle" colspan="2" style="padding-left:65px;">Harry Potter</td>
+	<td id="booktitle" colspan="2" style="padding-left:65px;">Truthwitch</td>
+	<td id="booktitle" colspan="2" style="padding-left:65px;">The Crown</td>
+	<td id="booktitle" colspan="2" style="padding-left:65px;">One With You</td>
+</tr>
+
+<tr><td id="book" colspan="2"><img id="bookimg" src="harry potter.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="truthwitch.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="the crown.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="one with you.jpg"/></td>
+</tr>	
+
+<tr><td id="bookdescrip" colspan="2">Based on an original new story by
+								<br/> J.K. Rowling, Jack Thorne and 
+								<br/>John Tiffany, Harry Potter and the
+								<br/> Cursed Child, a new play by Jack
+								<br/> Thorne, is the first official 
+								<br/>Harry Potter story to be presented
+								<br/> on stage. It will receive its 
+								<br/>world premiere in London’s West 
+								<br/>End on 30th July 2016 </td>	
+	
+	<td id="bookdescrip" colspan="2">In a continent on the edge of war,
+								<br/> two witches hold its fate in
+								<br/> their hands.<br/>
+								<br/>Young witches Safiya and Iseult
+								<br/> have a habit of finding 
+								<br/>trouble. After clashing with a
+								<br/> powerful Guildmaster and his 
+								<br/>ruthless Bloodwitch bodyguard,
+								<br/> the friends are forced to flee
+								<br/> their home.</td>
+
+							
+	<td id="bookdescrip" colspan="2">Kiera Cass’s bestselling Selection
+								<br/> series has enchanted readers 
+								<br/>from the very first page. Now the
+								<br/> end of the journey is here, in a
+								<br/> wonderfully romantic series 
+								<br/>finale that will sweep you off 
+								<br/>your feet.</td>
+							
+	<td id="bookdescrip" colspan="2">Gideon Cross. Falling in love with
+								<br/> him was the easiest thing I've ever
+								<br/> done. It happened instantly. 
+								<br/>Completely. Irrevocably.<br/>
+								<br/>Marrying him was a dream come true. 
+								<br/>Staying married to him is the fight
+								<br/> of my life. Love transforms. Ours 
+								<br/>is both a refuge from the storm and
+								<br/> the most violent of tempests. Two 
+								<br/>damaged souls entwined as one.</td>
+
+</tr>						
+							
+<tr><td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM74.00<br/>
+			  Hardcover, 320 pages<br/>
+			  Expected publication: July 31st 2016 by Little Brown UK
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="" id="addtocart_button">Edit</button>
+	</td>
+	
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM50.75<br/>
+			  Kindle Edition, 416 pages<br/>
+			  Published January 5th 2016 by Tor Teen
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="" id="addtocart_button">Edit</button>
+	</td>
+
+	
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM48.30<br/>
+			  Hardcover, 288 pages<br/>
+			  Expected publication: May 3rd 2016 by HarperTeen
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="" id="addtocart_button">Edit</button>
+	</td>
+
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM44.60<br/>
+			  Paperback, 480 pages<br/>
+			  Expected publication: April 5th 2016 by St. Martin's Griffin
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="" id="addtocart_button">Edit</button>
+	</td>
+	</tr>
+</table>
+</section>
+
+
+<!--Footer-->
+<div id="footer">
+<p>Copyright©2016 NorthernFameBookstore.com. All Rights Reserved.</p>
+</div>
+<!--End footer-->
+
+</body>
+
+</html>

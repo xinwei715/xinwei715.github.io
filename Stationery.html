@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>HOME</title>
+<style type="text/css">
+
+body{
+	background-image:url('background.jpg')
+}
+
+#topbar{
+	background-color:rgba(255, 255, 255, .4);
+	padding:20px 200px 20px 20px;
+	text-decoration:none;
+}
+
+#table td{
+	font-size:10px;
+	font-family:Tahoma;
+	text-decoration:none;
+	padding:1px 10px 1px 10px;
+}
+	
+#table td:hover{
+	font-weight:bold;
+}
+
+#header{
+	background-color:rgba(245, 250, 2, .8);
+	padding-left:140px;
+	padding-right:140px;
+	padding-bottom:1px;
+	display:inherit;
+}
+
+#img1{
+	height:140px;
+	width:400px;
+}
+
+#img2{
+	height:140px;
+	width:140px;
+	padding-left:50px;
+}
+
+#nav{
+	margin-top: 5px;
+	padding:3px 140px 3px 140px;
+	background-color:rgba(255, 255, 255, .6);
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#menu ul li{
+	display:inline-block;
+	text-decoration:none;
+}
+
+#menu ul li a{
+	display:block;
+	padding-left:40px;
+	padding-right:40px;
+	text-decoration:none;
+}
+
+#menu ul li a:hover{
+	background-color:#669900;
+}
+
+#booktitle{
+	background-color:#E6FD8A;
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+	font-family:"Franklin Gothic Book";
+	font-weight:bold;
+	font-size:20px;
+	text-align:center;
+	margin: 10px 60px 10px 60px;
+	padding: 10px 55px 10px 55px;
+	border-radius:30px;
+	text-align:center;
+	width:300px;
+}
+
+#book{
+	background-color:rgba(255, 255, 255, .6);
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+	margin: 10px 60px 10px 60px;
+	padding: 10px;
+	text-align:center;
+	border-bottom:none;
+}
+
+#bookimg{
+	height:170px;
+	width:120px;
+}
+
+#bookdescrip{
+	background-color:rgba(255, 255, 255, .6);
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+	font-family:"Comic Sans MS";
+	font-size:12px;
+	margin: 10px 60px 10px 60px;
+	padding: 10px;
+	text-align:center;
+	border-bottom:none;
+}
+
+#bookdetails{
+	background-color:#EAFF95;
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+	border-radius:7px;
+	font-family:"Kristen ITC";
+	font-size:15px;
+	text-align:center;
+	padding-left:8px;
+	padding-right:8px;
+
+}
+
+#addtocart_button {
+	font-family:"Kristen ITC";
+	font-size:15px;
+	border-style:hidden;
+	background:#EAFF95;
+	cursor:pointer;
+}
+
+/*Item Details*/
+#popup { 
+	color:black; 
+}
+
+#popup a span {
+	display:none;
+}
+
+#popup a:hover { 
+	height:100%;
+	width:100%;
+	display:block;
+	cursor:pointer; 
+}
+
+#popup a:hover span {
+	font-size:12px;
+	line-height:15px;
+	display:block;
+	position:absolute;
+	width:200px;
+	padding:10px;
+	color:black;
+	background:white;
+	text-align:left;
+}
+/*End of Item Details*/
+	
+#footer{
+	background-color:rgba(255, 255, 255, .4);
+	display:inline-block;
+	float:right;
+	padding:1px 180px 1px 820px;
+	font-size:12px;
+}
+
+</style>
+</head>
+
+<body>
+<!--Header-->
+<div id="topbar">
+	<table id="table" style="float:right">
+	<tr>
+		<td><a href="Sign in.html">SIGN IN</a></td>
+		<td><a href="Registration.html">REGISTER</a></td>
+	</tr>
+	</table>
+</div>
+
+
+<div id="header">
+ <img id="img1" src="logo1.png">
+ <img id="img2" src="stamps1.png">
+<!--End header>
+ 
+ 
+ 
+ 
+<!--search engine-->
+ <div class="searchengine" style="float:right;padding-top:50px;width:400px">
+	<form style="display:table-cell">
+	<input name="searchText1" type="text" style="border-color:#00CC99;border-style:inherit;width:300px;height:30px;padding-left:10px
+		;font-family:'Comic Sans MS'" placeholder="Search key word" />
+		<a href="Search.html">
+	<input name="Button1" type="button" value="Search" style="padding:1px;height:30px;width:54px;font-family:'Angsana New';
+		font-size:15px;text-align:center;background-color:#80B34D;border-color:none"></a>
+	</form>
+</div>
+</div>
+<!--end search engine-->
+ 
+ 
+
+
+<!--Nagivation Bar-->
+<div id="nav">
+<div id="menu">
+<ul>
+	<li><a href="index.html">HOME</a></li>|
+	<li><a href="Book.html">BOOK</a></li>|	
+	<li><a href="Magazine.html">MAGAZINE</a></li>|
+	<li><a href="Stationery.html">STATIONERY</a></li>|
+	<li><a href="About us.html">ABOUT US</a></li>|
+	<li><a href="Contact Us.html">CONTACT US</a></li>
+</ul>
+</div></div>
+<!--End nagivation-->
+
+
+<!--Book table-->
+<section>
+<p style="text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:xx-large">Calendar</p>
+<table style="margin:10px;padding-left:100px;padding-right:100px;">
+<tr><td id="booktitle" colspan="2">Mum's Family Calender 2016</td>
+	<td id="booktitle" colspan="2">Jukurrpa</td>
+	<td id="booktitle" colspan="2">Posh Coloring : For Fun & Relaxation</td>
+	<td id="booktitle" colspan="2">Secret Garden</td>
+</tr>
+
+<tr><td id="book" colspan="2"><img id="bookimg" src="Calender/mum's family.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="Calender/jukurrpa.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="Calender/posh coloring.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="Calender/secret garden.jpg"/></td>
+</tr>	
+							
+<tr><td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM77.10<br/>
+			  Calendar and Year Planner<br/>
+			  Wall Calendar<br/>
+			  BrownTrout Publishers<br/>
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="myFunction()" id="addtocart_button">Add to Cart</button>
+	</td>
+	
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM85.95<br/>
+			  2016 Wall Calendar<br/>
+			  Wall Calendar
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="myFunction()" id="addtocart_button">Add to Cart</button>
+	</td>
+
+	
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM56.55<br/>
+			  2016 Day-To-Day Calendar<br/>
+			  Day-by-Day Calendar<br/>
+			  Thaneeya McArdle
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="myFunction()" id="addtocart_button">Add to Cart</button>
+	</td>
+
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM91.50<br/>
+			  2016 Coloring Wall Calendar<br/>
+			  Wall Calendar<br/>
+			  Johanna Basford
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="myFunction()" id="addtocart_button">Add to Cart</button>
+	</td>
+	</tr>
+	
+<script>
+	function myFunction() {
+	    alert("Item has been added successfully to the cart.");
+	}
+</script>
+
+</table>
+</section>
+
+<section>
+<p style="text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:xx-large">Notebooks</p>
+<table style="margin:10px;padding-left:100px;padding-right:100px;">
+<tr><td id="booktitle" colspan="2">The Family Project</td>
+	<td id="booktitle" colspan="2">Paris Street Style</td>
+	<td id="booktitle" colspan="2">Tails from the Booth Notebooks (Set of 3)</td>
+	<td id="booktitle" colspan="2">Another Architecture Notebook</td>
+</tr>
+
+<tr><td id="book" colspan="2"><img id="bookimg" src="Notebooks/the family project.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="Notebooks/paris street style.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="Notebooks/tails from the booth.jpg"/></td>
+	<td id="book" colspan="2"><img id="bookimg" src="Notebooks/another architecture.jpg"/></td>
+</tr>	
+							
+<tr><td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM82.20<br/>
+			  Diary, Journal or Blank Book<br/>
+			  Harriet Green
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="myFunction()" id="addtocart_button">Add to Cart</button>
+	</td>
+	
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM56.75<br/>
+			  Les Notebooks<br/>
+			  Diary, Journal or Blank Book<br/>
+			  Abrams Noterie
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="myFunction()" id="addtocart_button">Add to Cart</button>
+	</td>
+
+	
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM66.70<br/>
+			  Diary, Journal or Blank Book<br/>
+			  Terry Lynn
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="myFunction()" id="addtocart_button">Add to Cart</button>
+	</td>
+
+	<td id="bookdetails">
+		<div id="popup"> 
+
+		<a>Details
+		<span>Price: RM70.95<br/>
+			  Diary, Journal or Blank Book<br/>
+			  Mark Magazine
+		</span>
+		</a>
+		</div>
+		</td>
+
+	<td id="bookdetails">
+		<button onclick="myFunction()" id="addtocart_button">Add to Cart</button>
+	</td>
+	</tr>
+	
+<script>
+	function myFunction() {
+	    alert("Item has been added successfully to the cart.");
+	}
+</script>
+
+</table>
+</section>
+<!--End book table-->
+
+
+
+<!--Footer-->
+<div id="footer">
+<p>Copyright©2016 NorthernFameBookstore.com. All Rights Reserved.</p>
+</div>
+<!--End footer-->
+
+</body>
+	
+</html>
