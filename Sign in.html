@@ -104,8 +104,8 @@ body{
 
 
 <div id="header">
- <img id="img1" src="logo1.png"/>
- <img id="img2" src="stamps1.png"/>
+ <img id="img1" src="logo1.png">
+ <img id="img2" src="stamps1.png">
 <!--End header>
  
  
@@ -146,12 +146,13 @@ body{
 
 <!--Sign in-->
 <div  id="signin">
-	<form>
+	<form id="login1" method="post">
 		<p style="text-align:center; font-size:25px; font-weight:bold; font-family:Franklin Gothic Book">Sign In </p><br/>
-		Username: <input name="name" type="text" id="username" style="width:200px"/><br/>
-		<br/>Password: <input name="password" type="password"  id="password" style="width:200px"/>
+		Username: <input type="text" name="user" required="required" style="width:200px"/><br/>
+		<br/>Password: <input type="password"  name="password" required="required" style="width:200px"/>
 		<br/><p style="font-size:13px;width:100px">Forgot password?</p>
-		<input type="button" id="button" value="Sign In" style="float:right; width: 80px; height: 24px; background-color:#F2F99D;font-size:15px;border-color:#D8E166;font-family:Georgia;color:black" onclick="check(this.form)"/> 
+		<input type="button" id="btnLogin" class="login" value="Sign in" 
+				style="float:right; width: 80px; height: 24px; background-color:#F2F99D;font-size:15px;border-color:#D8E166;font-family:Georgia;color:black" /> 
 </form>
 </div>
 <!--End sign in-->
@@ -163,23 +164,27 @@ body{
 <!--End footer-->
 
 <script language="javascript">
-	function check(form)
-		{
-	 if(form.name.value == "xinwei" && form.password.value == "xinwei123")
-	  {
-	    window.open('file:///C:/Users/User/Documents/Diploma in Sem 5/ISWE (Introduction to Software Engineering)/Assignment/HTML/Home(Logged in).html')
-	    window.close('file:///C:/Users/User/Documents/Diploma in Sem 5/ISWE (Introduction to Software Engineering)/Assignment/HTML/Sign in.html')
-	    	  }
-	 else if(form.name.value == "lala" && form.password.value == "lala123")
-	  {
-		 	window.open('file:///C:/Users/User/Documents/Diploma in Sem 5/ISWE (Introduction to Software Engineering)/Assignment/HTML/Home(Admin).html')
-		 	window.close('file:///C:/Users/User/Documents/Diploma in Sem 5/ISWE (Introduction to Software Engineering)/Assignment/HTML/Sign in.html')
-			 }
-	 else
-	  {
-	   alert("Username or password incorrect.")
-	  }
-	}
+function check() {
+            var user = document.querySelector("#login1 input[name='user']").value
+            var password = document.querySelector("#login1 input[name='password']").value
+
+            console.log(user)
+            console.log(password)
+            if (user == "xinwei" && password == "123") {
+                window.open('Home(Logged in).html')
+                window.close('Sign in.html')
+            } else if (user == "lala" && password == "123") {
+                alert("Welcome, Staff.")
+                window.open('Home(Admin).html')
+                window.close('Sign in.html')
+            } else {
+                alert("Invalid Username or Password")
+            }
+        }
+        document.getElementById("btnLogin").addEventListener("click", function onLogin(e) {
+            console.log('login');
+            check();
+        });
 </script>
 
 

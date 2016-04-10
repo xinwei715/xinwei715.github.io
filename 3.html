@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+</head>
+
+<body>
+<form id="login1" method="post">
+<input type="text" name="user" required/>
+<input type="password"  name="password" required/>
+<input type="button" id="btnLogin" class="login" value="Login"/>
+</form>
+
+<script>
+function check() {
+            var user = document.querySelector("#login1 input[name='user']").value
+            var password = document.querySelector("#login1 input[name='password']").value
+
+            console.log(user)
+            console.log(password)
+            if (user == "user" && password == "123") {
+                window.open('Book.html')
+                window.close('Sign in.html')
+            } else if (user == "staff" && password == "123") {
+                alert("Welcome, Staff.")
+                window.open('search.html')
+                window.close('Sign in.html')
+            } else {
+                alert("Invalid Username or Password")
+            }
+        }
+        document.getElementById("btnLogin").addEventListener("click", function onLogin(e) {
+            console.log('login');
+            check();
+        });
+
+</script>
+
+</body>
+
+</html>
